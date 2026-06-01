@@ -32,6 +32,8 @@
         <a href="#academics">Academics</a>
         <a href="#admissions">Admissions</a>
         <a href="#life">Student Life</a>
+        <a href="#result-checker">Result Checker</a>
+        <a href="#news">News</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -135,7 +137,45 @@
           </ul>
         </div>
       </section>
-
+       <section class="section result-section" id="result-checker">
+        <div class="section-heading">
+          <p class="eyebrow">Student portal</p>
+          <h2>Check student results online.</h2>
+        </div>
+        <div class="result-layout">
+          <form class="result-form" id="result-form">
+            <div class="form-intro">
+              <h3>Result checker</h3>
+              <p>Enter the student's admission number, term, and result PIN to view available scores.</p>
+            </div>
+            <label>
+              Admission number
+              <input name="studentId" placeholder="BT-2026-001" autocomplete="off" required />
+            </label>
+            <label>
+              Term
+              <select name="term" required>
+                <option value="">Select term</option>
+                <option>First Term 2026</option>
+                <option>Second Term 2026</option>
+                <option>Third Term 2026</option>
+              </select>
+            </label>
+            <label>
+              Result PIN
+              <input name="pin" type="password" placeholder="Enter result PIN" autocomplete="off" required />
+            </label>
+            <button class="button primary" type="submit">Check result</button>
+            <p class="form-status" id="result-status" role="status" aria-live="polite"></p>
+          </form>
+          <article class="result-card" id="result-card" aria-live="polite">
+            <div class="empty-result">
+              <span>BT</span>
+              <p>Result details will appear here after a successful check.</p>
+            </div>
+          </article>
+        </div>
+      </section>
       <section class="section admissions-section" id="admissions">
         <div class="section-heading">
           <p class="eyebrow">Admissions</p>
