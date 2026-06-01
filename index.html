@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BETTER TOMORROW is a welcoming school website for admissions, academics, events, and parent contact."
+    />
+    <title>BETTER TOMORROW School</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="BETTER TOMORROW home">
+        <span class="brand-mark" aria-hidden="true">BT</span>
+        <span>
+          <strong>BETTER TOMORROW</strong>
+          <small>School</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="menu-label">Menu</span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a class="nav-apply" href="#enrollment-form">Apply Now</a>
+        <a href="#life">Student Life</a>
+        <a href="#result-checker">Result Checker</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img class="hero-image" src="assets/better-tomorrow-frontage.png" alt="Students studying in a BETTER TOMORROW classroom" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Learning with confidence, character, and care</p>
+          <h1>BETTER TOMORROW</h1>
+          <p class="hero-copy">
+            A bright, disciplined, and nurturing school community where children are prepared to think clearly,
+            lead kindly, and grow with purpose.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#enrollment-form">Apply now</a>
+            <a class="button secondary" href="#academics">Explore academics</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-facts" aria-label="School highlights">
+        <article>
+          <strong>Small classes</strong>
+          <span>Focused attention for every learner</span>
+        </article>
+        <article>
+          <strong>Creative clubs</strong>
+          <span>Arts, science, sports, and leadership</span>
+        </article>
+        <article>
+          <strong>Parent partnership</strong>
+          <span>Clear communication all term long</span>
+        </article>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-copy">
+          <p class="eyebrow">About the school</p>
+          <h2>Building the habits that make tomorrow better.</h2>
+          <p>
+            BETTER TOMORROW combines strong academics with values-led mentoring. Our classrooms are calm,
+            energetic spaces where teachers know each child by name and help them stretch beyond what they
+            thought possible.
+          </p>
+        </div>
+        <div class="values-grid" aria-label="School values">
+          <article>
+            <span>01</span>
+            <h3>Excellence</h3>
+            <p>Students learn to do careful work and take pride in steady progress.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Character</h3>
+            <p>Respect, honesty, service, and responsibility are taught every day.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Confidence</h3>
+            <p>Children practice speaking, creating, asking questions, and solving problems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section academics-section" id="academics">
+        <div class="section-heading">
+          <p class="eyebrow">Academics</p>
+          <h2>Programs for every stage of growth.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <span class="program-icon">N</span>
+            <h3>Nursery</h3>
+            <p>Playful early learning, phonics, number sense, music, movement, and social confidence.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-icon">P</span>
+            <h3>Primary</h3>
+            <p>Strong foundations in literacy, numeracy, science, technology, arts, and civic values.</p>
+          </article>
+          <article class="program-card">
+            <span class="program-icon">J</span>
+            <h3>Junior Secondary</h3>
+            <p>Subject mastery, study skills, guided projects, practical labs, and leadership habits.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-band" id="life">
+        <div class="feature-image-wrap">
+          <img src="assets/better-tomorrow-student-life.png" alt="Illustrated students walking across campus" />
+        </div>
+        <div class="feature-copy">
+          <p class="eyebrow">Student life</p>
+          <h2>School days filled with discovery.</h2>
+          <p>
+            Students take part in reading circles, debates, sports days, cultural celebrations, science projects,
+            and service activities that help them become thoughtful, capable young people.
+          </p>
+          <ul class="check-list">
+            <li>Library and reading culture</li>
+            <li>Sports, music, drama, and art</li>
+            <li>Guidance, mentoring, and leadership roles</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section result-section" id="result-checker">
+        <div class="section-heading">
+          <p class="eyebrow">Student portal</p>
+          <h2>Check student results online.</h2>
+        </div>
+        <div class="result-layout">
+          <form class="result-form" id="result-form">
+            <div class="form-intro">
+              <h3>Result checker</h3>
+              <p>Enter the student's admission number, term, and result PIN to view available scores.</p>
+            </div>
+            <label>
+              Admission number
+              <input name="studentId" placeholder="BT-2026-001" autocomplete="off" required />
+            </label>
+            <label>
+              Term
+              <select name="term" required>
+                <option value="">Select term</option>
+                <option>First Term 2026</option>
+                <option>Second Term 2026</option>
+                <option>Third Term 2026</option>
+              </select>
+            </label>
+            <label>
+              Result PIN
+              <input name="pin" type="password" placeholder="Enter result PIN" autocomplete="off" required />
+            </label>
+            <button class="button primary" type="submit">Check result</button>
+            <p class="form-status" id="result-status" role="status" aria-live="polite"></p>
+          </form>
+          <article class="result-card" id="result-card" aria-live="polite">
+            <div class="empty-result">
+              <span>BT</span>
+              <p>Result details will appear here after a successful check.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section admissions-section" id="admissions">
+        <div class="section-heading">
+          <p class="eyebrow">Admissions</p>
+          <h2>Start your child's BETTER TOMORROW journey.</h2>
+        </div>
+        <div class="admission-steps">
+          <article>
+            <span>1</span>
+            <h3>Visit</h3>
+            <p>Tour the campus, meet staff, and see the classrooms in action.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Apply</h3>
+            <p>Submit the admission form with your child's basic records.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Assess</h3>
+            <p>We place each learner where they can grow with confidence.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Enroll</h3>
+            <p>Complete registration and receive the term welcome guide.</p>
+          </article>
+        </div>
+
+        <form class="enrollment-form" id="enrollment-form">
+          <div class="form-intro">
+            <p class="eyebrow">Apply now</p>
+            <h3>Enrollment and registration form</h3>
+            <p>Complete the stages below so the admissions team can schedule a visit, review the application, assess placement, and prepare enrollment.</p>
+          </div>
+
+          <fieldset>
+            <legend>Visit</legend>
+            <div class="form-grid">
+              <label>
+                Parent or guardian name
+                <input name="guardianName" autocomplete="name" required />
+              </label>
+              <label>
+                Phone number
+                <input name="phone" type="tel" autocomplete="tel" required />
+              </label>
+              <label>
+                Email address
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+              <label>
+                Preferred visit date
+                <input name="visitDate" type="date" required />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Apply</legend>
+            <div class="form-grid">
+              <label>
+                Child's full name
+                <input name="childName" autocomplete="off" required />
+              </label>
+              <label>
+                Date of birth
+                <input name="birthDate" type="date" required />
+              </label>
+              <label>
+                Class applying for
+                <select name="classLevel" required>
+                  <option value="">Select class</option>
+                  <option>Nursery</option>
+                  <option>Primary 1</option>
+                  <option>Primary 2</option>
+                  <option>Primary 3</option>
+                  <option>Primary 4</option>
+                  <option>Primary 5</option>
+                  <option>Junior Secondary 1</option>
+                  <option>Junior Secondary 2</option>
+                  <option>Junior Secondary 3</option>
+                </select>
+              </label>
+              <label>
+                Previous school
+                <input name="previousSchool" autocomplete="off" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Assess</legend>
+            <div class="form-grid">
+              <label>
+                Preferred assessment date
+                <input name="assessmentDate" type="date" required />
+              </label>
+              <label>
+                Learning support needed?
+                <select name="learningSupport" required>
+                  <option>No</option>
+                  <option>Yes</option>
+                  <option>Not sure</option>
+                </select>
+              </label>
+              <label class="wide-field">
+                Academic strengths or areas to support
+                <textarea name="academicNotes" rows="3" placeholder="Tell us anything useful about the learner."></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Enrollment</legend>
+            <div class="form-grid">
+              <label>
+                Preferred start term
+                <select name="startTerm" required>
+                  <option value="">Select term</option>
+                  <option>First Term</option>
+                  <option>Second Term</option>
+                  <option>Third Term</option>
+                </select>
+              </label>
+              <label>
+                Emergency contact
+                <input name="emergencyContact" type="tel" autocomplete="tel" required />
+              </label>
+              <label>
+                Home address
+                <input name="address" autocomplete="street-address" required />
+              </label>
+              <label>
+                How did you hear about us?
+                <select name="referral">
+                  <option>Friend or family</option>
+                  <option>Social media</option>
+                  <option>School signboard</option>
+                  <option>Search engine</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label class="wide-field consent-row">
+                <input name="consent" type="checkbox" required />
+                <span>I confirm that the information provided is correct and I want BETTER TOMORROW to contact me about enrollment.</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="button primary" type="submit">Submit registration</button>
+          <p class="form-status" id="enrollment-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section news-section" id="news" aria-labelledby="news-title">
+        <div class="section-heading">
+          <p class="eyebrow">News and events</p>
+          <h2 id="news-title">What is happening at school.</h2>
+        </div>
+        <div class="news-grid">
+          <article>
+            <time datetime="2026-06-10">June 10</time>
+            <h3>Open Day</h3>
+            <p>Families are invited for classroom visits, teacher conversations, and admission guidance.</p>
+          </article>
+          <article>
+            <time datetime="2026-07-18">July 18</time>
+            <h3>Science and Arts Fair</h3>
+            <p>Students present experiments, handmade projects, performances, and creative displays.</p>
+          </article>
+          <article>
+            <time datetime="2026-08-05">August 5</time>
+            <h3>Holiday Reading Challenge</h3>
+            <p>A friendly reading program to keep learners curious and expressive during the break.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Talk with BETTER TOMORROW.</h2>
+          <p>
+            Ask about admissions, fees, school visits, or your child's learning needs. A staff member will
+            respond with the next step.
+          </p>
+          <address>
+            12 Learning Avenue, Your City<br />
+            +234 800 000 0000<br />
+            hello@bettertomorrow.school
+          </address>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Parent or guardian name
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Phone or email
+            <input name="contact" autocomplete="email" required />
+          </label>
+          <label>
+            Child's class of interest
+            <select name="program">
+              <option>Nursery</option>
+              <option>Primary</option>
+              <option>Junior Secondary</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> BETTER TOMORROW School. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
