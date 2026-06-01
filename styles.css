@@ -21,6 +21,13 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+    background-image: url('your-image-assets/assets-better-tomorrow-frontage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 body {
   margin: 0;
